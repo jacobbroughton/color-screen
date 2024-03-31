@@ -1,0 +1,65 @@
+.color-window {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.hidden-window {
+  transition: opacity 0.3 ease;
+}
+
+.color-input,
+.color-input-button {
+  position: fixed;
+  z-index: 2;
+}
+
+
+#input-button-1,
+#color-input-1{
+  top: 10px;
+  left: 10px;
+}
+
+#input-button-2,
+#color-input-2{
+  top: 10px;
+  right: 10px;
+}
+
+#input-button-3,
+#color-input-3 {
+  bottom: 10px;
+  left: 10px;
+}
+
+#input-button-4,
+#color-input-4 {
+  bottom: 10px;
+  right: 10px;
+}
+
+#input-button-5,
+#color-input-5 {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.color-input {
+  visibility: hidden;
+}
+
+.color-input-button {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  transition: 0.075s linear opacity;
+  opacity: 0;
+  border-radius: 3px;
+  border: 2px solid #181818;
+}
+
+.color-input-button:hover {
+  opacity: 1;
+}
